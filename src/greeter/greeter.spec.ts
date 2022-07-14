@@ -1,4 +1,4 @@
-import { greet } from "./greeter";
+import { add, greet } from './greeter';
 
 describe("greet", () => {
   it("should greet the world", () => {
@@ -12,3 +12,10 @@ describe("greet", () => {
     expect(console.log).toHaveBeenCalledWith("hello world");
   });
 });
+
+describe("add", () => {
+  it('should return 0 for empty string', function () {
+    const total = add("");
+    expect(total).toStrictEqual(0);
+  });
+})
