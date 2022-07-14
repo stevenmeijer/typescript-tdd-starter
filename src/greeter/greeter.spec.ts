@@ -18,4 +18,9 @@ describe("add", () => {
     const total = add("");
     expect(total).toStrictEqual(0);
   });
+
+  it('should return n for input n', function () {
+    const total = add("5");
+    expect(total).toStrictEqual(5);
+  });
 })

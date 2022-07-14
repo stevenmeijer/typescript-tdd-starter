@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.ts",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "test-watch": "jest --watchAll"
   },
   "author": "Ruben Pera",
   "license": "MIT",

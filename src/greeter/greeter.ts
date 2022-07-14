@@ -3,5 +3,5 @@ export function greet() {
 }
 
 export function add(numbers: string): number {
-  return 0;
+  return numbers ? +numbers : 0;
 }
