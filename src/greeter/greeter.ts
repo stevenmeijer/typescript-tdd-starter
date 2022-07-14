@@ -3,7 +3,7 @@ export function greet() {
 }
 
 export function add(numbers: string): number {
-  const numberList = numbers.split(",");
+  const numberList = numbers.split(/[\n,]+/);
 
   if (numberList.length > 0) {
     return numberList.reduce((total, car) => total + Number(car), 0)

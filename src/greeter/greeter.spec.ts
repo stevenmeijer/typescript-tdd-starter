@@ -33,4 +33,9 @@ describe("add", () => {
     const total = add("1,2,3");
     expect(total).toStrictEqual(6);
   });
+
+  it('should allow newline delimiters', function () {
+    const total = add("1\n2,3");
+    expect(total).toStrictEqual(6);
+  });
 })
