@@ -3,5 +3,12 @@ export function greet() {
 }
 
 export function add(numbers: string): number {
-  return numbers ? +numbers : 0;
+  const numberList = numbers.split(",");
+  if (numberList.length === 1) {
+    return Number(numberList[0]);
+  } else if (numberList.length === 2) {
+    return Number(numberList[0]) + Number(numberList[1]);
+  } else {
+    return 0
+  }
 }

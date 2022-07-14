@@ -23,4 +23,9 @@ describe("add", () => {
     const total = add("5");
     expect(total).toStrictEqual(5);
   });
+
+  it('should return sum of two numbers', function () {
+    const total = add("1,2");
+    expect(total).toStrictEqual(3);
+  });
 })
